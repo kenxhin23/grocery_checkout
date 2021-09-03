@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void initState() {
     refreshList();
+    // print(UserData.buCode);
     timer =
         Timer.periodic(Duration(seconds: 1), (Timer t) => loadForPickupNo());
     super.initState();
@@ -53,8 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
   loadForPickupNo() async {
     var fpn = await loadForPickup(UserData.buCode);
     _pickList = fpn;
+
     var fpn2 = await loadForDelivery(UserData.buCode);
     _delList = fpn2;
+    // print(_delList);
     setState(() {
       forPickup = (int.parse(_pickList.length.toString()) +
               int.parse(_delList.length.toString()))
@@ -69,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   checkReceiptCode() async {
     var rsp = await getTransaction(_scanBarcode);
-
+    print(_scanBarcode);
     if (rsp != '') {
       setState(() {
         spinKit = false;

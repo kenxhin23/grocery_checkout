@@ -186,14 +186,14 @@ class _MyLoginPageState extends State<MyLoginPage> {
                   }
                   if (rsp == 'failed username') {
                     print("Invalid username or Password");
-                    _scaffoldKey.currentState.showSnackBar(
+                    ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                           backgroundColor: Colors.red,
                           content: Text("Invalid username or Password")),
                     );
                   } else if (rsp == 'failed password') {
                     print("Invalid username or Password");
-                    _scaffoldKey.currentState.showSnackBar(
+                    ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                           backgroundColor: Colors.red,
                           content: Text("Invalid username or Password")),
