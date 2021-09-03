@@ -33,9 +33,9 @@ class CheckoutPage extends StatefulWidget {
 class _CheckoutPageState extends State<CheckoutPage> {
   // final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   List<TextEditingController> _controllers = new List();
-  final _formKey = GlobalKey<FormState>();
+  // final _formKey = GlobalKey<FormState>();
   final barcodeController = TextEditingController();
-  final _focusNode = FocusNode();
+  // final _focusNode = FocusNode();
   int charlength = 0;
   bool viewSpinkit = true;
   String barcode = '';
@@ -44,7 +44,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
   String stat = '';
   Timer timer1;
 
-  String _scanBarcode = '';
+  // String _scanBarcode = '';
 
   final String date =
       DateFormat("yyyy-MM-dd H:mm:ss").format(new DateTime.now());
@@ -406,6 +406,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
           itemCount: _packList.length,
           itemBuilder: (context, index) {
             int x = _packList.length;
+            print(x);
             bool scanned = false;
             if (_packList[index]['status'] == 'Paid and Released') {
               scanned = true;
@@ -739,11 +740,13 @@ class _ScanAlertDialogState extends State<ScanAlertDialog> {
               SizedBox(
                 height: 20,
               ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                color: Colors.deepOrange,
-                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                ),
                 onPressed: () {
                   GlobalVariables.pop = true;
                   Navigator.pop(context);
@@ -832,11 +835,13 @@ class _NotFoundDialogState extends State<NotFoundDialog> {
                 SizedBox(
                   height: 20,
                 ),
-                RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                  color: Colors.deepOrange,
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.deepOrange,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                  ),
                   onPressed: () {
                     setState(() {
                       GlobalVariables.clearText = true;
@@ -940,12 +945,14 @@ class _ConfirmDialogState extends State<ConfirmDialog> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            color: Colors.deepOrange,
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 12),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.deepOrange,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 40, vertical: 12),
+                            ),
                             onPressed: () => {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
@@ -958,12 +965,14 @@ class _ConfirmDialogState extends State<ConfirmDialog> {
                             ),
                           ),
                           SizedBox(width: 10),
-                          RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            color: Colors.deepOrange,
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 12),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.deepOrange,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 40, vertical: 12),
+                            ),
                             onPressed: () => {
                               Navigator.pop(context),
                             },

@@ -403,12 +403,14 @@ class _ConfirmBoxState extends State<ConfirmBox> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(0)),
-                      color: Colors.deepOrange,
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.deepOrange,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      ),
                       onPressed: () => {
                         Navigator.pop(context),
                       },

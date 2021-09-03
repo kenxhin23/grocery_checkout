@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  // final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
   final transactionController = TextEditingController();
   List _pickList = [];
@@ -501,11 +501,13 @@ class _ScanSuccessfulState extends State<ScanSuccessful> {
               SizedBox(
                 height: 20,
               ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                color: Colors.deepOrange,
-                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                ),
                 onPressed: () {
                   // loadFavorites(),
 
@@ -592,11 +594,13 @@ class _NotFoundDialogState extends State<NotFoundDialog> {
               SizedBox(
                 height: 20,
               ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                color: Colors.deepOrange,
-                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                ),
                 onPressed: () => {
                   // loadFavorites(),
                   Navigator.pop(context),

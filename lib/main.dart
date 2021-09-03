@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_checkout/homescreen.dart';
-import 'package:grocery_checkout/login.dart';
+// import 'package:grocery_checkout/login.dart';
 
 void main() {
   runApp(MyApp());

@@ -44,15 +44,15 @@ class _MenuState extends State<Menu> {
           items: [
             BottomNavigationBarItem(
               icon: new Icon(Icons.home),
-              title: new Text('Transaction'),
+              label: 'Transaction',
             ),
             BottomNavigationBarItem(
               icon: new Icon(Icons.swap_horiz),
-              title: new Text('History'),
+              label: 'History',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              title: Text('Profile'),
+              label: 'Profile',
             )
           ],
         ),

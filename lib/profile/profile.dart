@@ -569,12 +569,14 @@ class _InputPassDialogState extends State<InputPassDialog> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        color: Colors.deepOrange,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepOrange,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 12),
+                        ),
                         onPressed: () async {
                           if (oldPassController.text.isNotEmpty) {
                             var pass = oldPassController.text;
@@ -1332,12 +1334,14 @@ class _ConfirmDialogState extends State<ConfirmDialog> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        color: Colors.deepOrange,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepOrange,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 12),
+                        ),
                         onPressed: () {
                           print('CHANGING PASSWORD');
                           changePassword();
@@ -1499,12 +1503,14 @@ class _SuccessDialogState extends State<SuccessDialog> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        color: Colors.deepOrange,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepOrange,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 12),
+                        ),
                         onPressed: () {
                           Navigator.pop(context);
                           // GlobalVariables.menuKey = 0;
@@ -1641,12 +1647,14 @@ class _PassRestrictionDialogState extends State<PassRestrictionDialog> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      RaisedButton(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        color: Colors.deepOrange,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.deepOrange,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 40, vertical: 12),
+                        ),
                         onPressed: () => {
                           Navigator.pop(context),
                         },
@@ -1777,12 +1785,14 @@ class _LogoutDialogState extends State<LogoutDialog> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            color: Colors.deepOrange,
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 12),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.deepOrange,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 40, vertical: 12),
+                            ),
                             onPressed: () => {
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
@@ -1795,12 +1805,14 @@ class _LogoutDialogState extends State<LogoutDialog> {
                             ),
                           ),
                           SizedBox(width: 10),
-                          RaisedButton(
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            color: Colors.deepOrange,
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 12),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.deepOrange,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 40, vertical: 12),
+                            ),
                             onPressed: () => {
                               Navigator.pop(context),
                             },
