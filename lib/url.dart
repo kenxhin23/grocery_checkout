@@ -20,11 +20,11 @@
 //   static String url = 'http://172.16.43.252:8989/';
 // }
 
-// class UrlAddress {
-//   static String url = 'http://203.177.223.59:8012/';
-// }
+class UrlAddress {
+  static String url = 'http://172.16.43.112:9000/';
+}
 
 ////LIVE
-class UrlAddress {
-  static String url = 'https://checker.alturush.com/';
-}
+// class UrlAddress {
+//   static String url = 'https://checker.alturush.com/';
+// }

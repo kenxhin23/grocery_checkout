@@ -47,6 +47,7 @@ class _HistoryState extends State<History> {
 
   loadHistoryApi() async {
     var fpn = await loadHistory(UserData.id);
+    if (!mounted) return;
     setState(() {
       _tranList = fpn;
       viewSpinkit = false;
@@ -62,7 +63,7 @@ class _HistoryState extends State<History> {
 
   searchCustomers() async {
     var getC = await searchCust(UserData.id, _searchController);
-
+    if (!mounted) return;
     setState(() {
       _tranList = getC;
 

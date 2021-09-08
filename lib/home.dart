@@ -53,9 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   loadForPickupNo() async {
     var fpn = await loadForPickup(UserData.buCode);
+    if (!mounted) return;
     _pickList = fpn;
 
     var fpn2 = await loadForDelivery(UserData.buCode);
+    if (!mounted) return;
     _delList = fpn2;
     // print(_delList);
     setState(() {

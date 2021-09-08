@@ -61,6 +61,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
   loadPackage() async {
     int x = 0;
     var getP = await getPackCount(TranData.receipt, TranData.mop);
+    if (!mounted) return;
     _packList = getP;
     // print(_packList);
     setState(() {
