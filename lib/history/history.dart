@@ -1,27 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:grocery_checkout/api.dart';
-// import 'package:grocery_checkout/home.dart';
 import 'package:grocery_checkout/userdata.dart';
 import 'package:intl/intl.dart';
-
-// void main() {
-//   runApp(History());
-// }
-
-// class History extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'CheckOut App',
-//       theme: ThemeData(
-//         primaryColor: ColorData.headerColor,
-//         visualDensity: VisualDensity.adaptivePlatformDensity,
-//       ),
-//       home: MyHistoryPage(),
-//     );
-//   }
-// }
 
 class History extends StatefulWidget {
   @override
@@ -41,7 +22,6 @@ class _HistoryState extends State<History> {
 
   void initState() {
     super.initState();
-    // print(UserData.id);
     loadHistoryApi();
   }
 
