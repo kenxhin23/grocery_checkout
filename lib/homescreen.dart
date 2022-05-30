@@ -1,16 +1,9 @@
 import 'dart:async';
-// import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-// import 'package:grocery_checkout/api.dart';
 import 'package:grocery_checkout/login.dart';
-// import 'package:grocery_checkout/menu.dart';
 import 'package:grocery_checkout/userdata.dart';
-// import 'package:page_transition/page_transition.dart';
-// import 'package:page_transition/page_transition.dart';
-// import 'package:retry/retry.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -96,23 +89,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            // Align(
-            //   alignment: Alignment.bottomLeft,
-            //   child: Container(
-            //     width: MediaQuery.of(context).size.width,
-            //     // height: 30,
-            //     // color: Colors.grey,
-            //     child: Text(
-            //       'E-COMMERCE(GROCERY_CHECKOUT APP) V1.' +
-            //           GlobalVariables.appVersion +
-            //           ' COPYRIGHT 2020',
-            //       style: TextStyle(
-            //           color: Colors.white,
-            //           fontSize: 10,
-            //           fontWeight: FontWeight.w500),
-            //     ),
-            //   ),
-            // )
           ],
         ),
       ),
