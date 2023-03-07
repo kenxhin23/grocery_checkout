@@ -284,7 +284,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text(
-            'READY FOR PICKUP ITEM:',
+            'READY FOR PICKUfP ITEM:',
             style: TextStyle(fontSize: 18, color: ColorData.fontLightColor),
           ),
           Container(
@@ -508,7 +508,7 @@ class _ScanSuccessfulState extends State<ScanSuccessful> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.deepOrange,
+                  backgroundColor: Colors.deepOrange,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
@@ -601,7 +601,7 @@ class _NotFoundDialogState extends State<NotFoundDialog> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.deepOrange,
+                  backgroundColor: Colors.deepOrange,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),

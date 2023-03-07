@@ -19,9 +19,10 @@
 // class UrlAddress {
 //   static String url = 'http://172.16.43.252:8989/';
 // }
+
 //LOCAL
 class UrlAddress {
-  static String url = 'http://172.16.43.112:9000/';
+  static String url = 'http://172.16.43.147/picker_alturush';
 }
 
 ////LIVE

@@ -162,12 +162,13 @@ class _MyLoginPageState extends State<MyLoginPage> {
       // width: MediaQuery.of(context).size.width,
       child: Column(
         children: [
-          RaisedButton(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
-            color: ColorData.themeColor,
-            padding: EdgeInsets.symmetric(horizontal: 60, vertical: 12),
-            elevation: 10,
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: ColorData.themeColor,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
+              padding:  EdgeInsets.symmetric(horizontal: 60, vertical: 12),
+              elevation: 10,
+            ),
             onPressed: () async {
               // checkConnection();
               if (viewSpinkit == true) {
@@ -181,6 +182,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
                       builder: (context) => ConnectServerBox());
 
                   var rsp = await loginUser(username, password);
+                  print(rsp);
                   if (rsp != '') {
                     Navigator.pop(context);
                   }
