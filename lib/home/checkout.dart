@@ -15,6 +15,7 @@ class Checkout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'CheckOut App',
       theme: ThemeData(
         primaryColor: ColorData.headerColor,

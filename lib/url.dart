@@ -21,11 +21,11 @@
 // }
 
 //LOCAL
-class UrlAddress {
-  static String url = 'http://172.16.43.147/picker_alturush';
-}
+// class UrlAddress {
+//   static String url = 'http://172.16.43.147/picker_alturush';
+// }
 
 ////LIVE
-// class UrlAddress {
-//   static String url = 'https://checker.alturush.com/';
-// }
+class UrlAddress {
+  static String url = 'https://checker.alturush.com/';
+}

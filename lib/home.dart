@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'CheckOut App',
       theme: ThemeData(
         primaryColor: ColorData.headerColor,
@@ -113,9 +114,14 @@ class _MyHomePageState extends State<MyHomePage> {
     String barcodeScanRes;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
+
       barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
           "#ff6666", "Cancel", true, ScanMode.BARCODE);
       print(barcodeScanRes);
+      // if (barcodeScanRes != null){
+      //   print(barcodeScanRes);
+      //   Navigator.pop(context, barcodeScanRes);
+      // }
     } on PlatformException {
       barcodeScanRes = 'Failed to get platform version.';
     }
@@ -226,6 +232,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         keyboardType: TextInputType.text,
                         onTap: () {
                           if (GlobalVariables.phonePressed == true) {
+                            print('Camera');
                             scanBarcodeNormal();
                           }
                           if (GlobalVariables.scannerPressed == true) {
